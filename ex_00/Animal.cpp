@@ -12,7 +12,7 @@ Animal::Animal(const Animal &other) : type(other.type)
 
 Animal& Animal::operator=(const Animal &other)
 {
-	std::cout << "Animal: & operator constructor" << std::endl;
+	std::cout << "Animal: = operator constructor" << std::endl;
 	if(this != &other)
 		type = other.type;
 	return *this;
