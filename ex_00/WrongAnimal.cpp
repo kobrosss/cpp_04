@@ -5,7 +5,7 @@ WrongAnimal::WrongAnimal() : type ("WrongAnimal")
 	std::cout << "WrongAnimal: Default constructor" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(const WrongAnimal &other)
+WrongAnimal::WrongAnimal(const WrongAnimal &other) : type(other.type)
 {
 	std::cout << "WrongAnimal: Copy constructor" << std::endl;
 }
